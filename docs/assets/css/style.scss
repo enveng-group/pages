@@ -1,0 +1,50 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.main-nav {
+
+
+  padding: 10px 0;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .company-name {
+    font-weight: bold;
+    font-size: 2.2em;
+    color: whitesmoke;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      margin-left: 65px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        
+        &:hover {
+          color: #eba204;
+        }
+      }
+    }
+  }
+  
+}
+
+.company-tagline {
+    margin-top: 80px;
+    padding-top: 20px;
+  }
+  
