@@ -11,28 +11,36 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+  
+    <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-        <nav class="main-nav">
-            <div class="container">
-              <a href="{{ site.baseurl }}/" class="company-name">Enveng-Group</a>
-              <ul>
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/docs/index.html">Docs</a></li>
-                <li><a href="{{ site.baseurl }}/resources/index.html">Resources</a></li>
-                <li><a href="{{ site.baseurl }}/projects/index.html">Projects</a></li>
-                <li><a href="{{ site.baseurl }}/about">About us</a></li>
-                <li><a href="{{ site.baseurl }}/contact/index.html">Contact us</a></li>
-                <li><a href="{{ site.baseurl }}/github/index.html">GITHUB</a></li>
-              </ul>
-            </div>
-          </nav>
+      <nav class="main-nav">
+        <div class="container">
+          <a href="{{ site.baseurl }}/" class="company-name">Enveng-Group</a>
+          <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Useful Links </a>
+              <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/page1">Docs</a>
+                <a href="{{ site.baseurl }}/page2">Resources</a>
+                <a href="{{ site.baseurl }}/page3">Projects</a>
+                <a href="{{ site.baseurl }}/page4">About us</a>
+                <a href="https://github.com/your-github-url">GITHUB</a>
+              </div>
+            </li>
+            <li><a href="{{ site.baseurl }}/page5">Contact us</a></li>
+            <li><button id="theme-toggle"><i class="fas fa-sun"></i></button></li>
+          </ul>
+        </div>
+      </nav>
           
-    <p class="company-tagline">Enveng-Group</p>
-
     </header>
 
     <main id="content" class="main-content" role="main">
