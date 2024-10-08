@@ -24,3 +24,10 @@ function toggleTheme() {
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
   });
   
+  document.querySelector('.hero-button').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#about-ecms').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  });
+  
